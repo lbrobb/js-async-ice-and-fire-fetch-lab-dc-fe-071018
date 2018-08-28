@@ -1,6 +1,7 @@
-// starter code
+// books
 
 function fetchBooks() {
+  console.log("=== fetchBooks ===");
   fetch('https://anapioficeandfire.com/api/books')
     .then(function(response) {
       console.log("--- books response ---");
@@ -23,10 +24,10 @@ function renderBooks(json) {
   })
 }
 
-
-// parse json
+// houses
 
 function fetchHouses() {
+  console.log("=== fetchHouses ===");
   fetch('https://anapioficeandfire.com/api/houses')
     .then(function(response) {
       console.log("--- houses response ---");
@@ -49,6 +50,7 @@ function renderHouses(json) {
   })
 }
 
+// event listener
 
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks();
