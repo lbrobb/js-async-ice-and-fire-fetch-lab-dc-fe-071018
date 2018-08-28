@@ -24,7 +24,8 @@ function renderBooks(json) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks()
+  fetchBooks();
+  fetchHouses();
 })
 
 // parse json
@@ -36,14 +37,14 @@ function fetchHouses() {
       console.log("response:", response);
       return response.json();
     })
-    .then(function(jsonHouses) {
+    .then(function(json) {
       console.log("--- then2 ---");
       console.log("json:", json);
       renderBooks(json);
     })
 }
 
-function renderHouses(jsonHouses) {
+function renderHouses(json) {
   const main = document.querySelector('main')
   json.forEach(house => {
     const h4 = document.createElement('h4')
