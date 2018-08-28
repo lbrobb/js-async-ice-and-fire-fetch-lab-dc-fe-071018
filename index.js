@@ -19,7 +19,7 @@ function renderBooks(json) {
   json.forEach(book => {
     const h4 = document.createElement('h4')
     h4.innerHTML = `<h4>${book.name}</h4>`
-    main.appendChild(h2)
+    main.appendChild(h4)
   })
 }
 
