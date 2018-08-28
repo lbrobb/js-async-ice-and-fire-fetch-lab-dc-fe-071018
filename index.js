@@ -37,7 +37,7 @@ function fetchHouses() {
     .then(function(json) {
       console.log("--- then2 ---");
       console.log("json:", json);
-      renderBooks(json);
+      renderHouses(json);
     })
 }
 
