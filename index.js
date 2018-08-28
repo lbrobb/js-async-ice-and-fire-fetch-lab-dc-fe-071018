@@ -58,6 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
-// 1. All the Houses in Game of Thrones
+// 1. All the Houses in Game of Thrones = still doesn't list more than 10 houses
 // 2. The 5th book in the series
-// 3. The 1031st character in the series
+// 3. The 1031st character in the series = do same as above using character/1031 instead of /house or /book
