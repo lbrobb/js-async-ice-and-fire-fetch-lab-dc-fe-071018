@@ -1,3 +1,5 @@
+// starter code
+
 function fetchBooks() {
   fetch('https://anapioficeandfire.com/api/books')
     .then(resp => resp.json())
@@ -17,5 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchBooks()
 })
 
+// parse json
 
-/////
+function printHouseNames()
+
+function fetchHouses() {
+  fetch('https://anapioficeandfire.com/api/houses')
+    .then(resp => resp.json())
+    .then(json => console.log(json));
+}
+
+
+
+// 1. All the Houses in Game of Thrones
+// 2. The 5th book in the series
+// 3. The 1031st character in the series
