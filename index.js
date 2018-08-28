@@ -2,7 +2,7 @@
 
 function fetchBooks() {
   fetch('https://anapioficeandfire.com/api/books')
-    .then(fuction(response) {
+    .then(function(response) {
       console.log("--- books response ---");
       console.log("response:", response);
       return response.json();
