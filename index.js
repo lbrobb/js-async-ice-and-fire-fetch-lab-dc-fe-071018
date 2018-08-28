@@ -23,10 +23,6 @@ function renderBooks(json) {
   })
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks();
-  fetchHouses();
-})
 
 // parse json
 
@@ -52,6 +48,12 @@ function renderHouses(json) {
     main.appendChild(h4)
   })
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  fetchBooks();
+  fetchHouses();
+})
 
 
 // 1. All the Houses in Game of Thrones
