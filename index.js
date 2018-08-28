@@ -21,8 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // parse json
 
-function printHouseNames()
-
 function fetchHouses() {
   fetch('https://anapioficeandfire.com/api/houses')
     .then(resp => resp.json())
