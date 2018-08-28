@@ -36,14 +36,14 @@ function fetchHouses() {
       console.log("response:", response);
       return response.json();
     })
-    .then(function(json) {
+    .then(function(jsonHouses) {
       console.log("--- then2 ---");
       console.log("json:", json);
       renderBooks(json);
     })
 }
 
-function renderHouses(json) {
+function renderHouses(jsonHouses) {
   const main = document.querySelector('main')
   json.forEach(house => {
     const h4 = document.createElement('h4')
