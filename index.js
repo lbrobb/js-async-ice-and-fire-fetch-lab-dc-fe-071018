@@ -7,6 +7,11 @@ function fetchBooks() {
       console.log("response:", response);
       return response.json();
     })
+    .then(function(json) {
+      console.log("--- then2 ---");
+      console.log("json:", json);
+      renderBooks(json);
+    })
 }
 
 function renderBooks(json) {
