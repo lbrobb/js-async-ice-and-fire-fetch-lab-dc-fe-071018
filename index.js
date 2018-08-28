@@ -31,8 +31,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function fetchHouses() {
   fetch('https://anapioficeandfire.com/api/houses')
-    .then(resp => resp.json())
-    .then(json => console.log(json));
+    .then(function(response) {
+      console.log("--- houses response ---");
+      console.log("response:", response);
+      return response.json();
+    })
+    .then(function(json) {
+      console.log("--- then2 ---");
+      console.log("json:", json);
+      renderBooks(json);
+    })
 }
 
 function renderHouses(json) {
