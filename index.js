@@ -27,6 +27,14 @@ function fetchHouses() {
     .then(json => console.log(json));
 }
 
+function renderHouses(json) {
+  const main = document.querySelector('main')
+  json.forEach(house => {
+    const h2 = document.createElement('h2')
+    h2.innerHTML = `<h2>${house.name}</h2>`
+    main.appendChild(h2)
+  })
+}
 
 
 // 1. All the Houses in Game of Thrones
